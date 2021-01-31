@@ -247,6 +247,7 @@ nav {
         margin-bottom: 2rem;
         @include transition();
 
+
         &:after {
             @include media('>128px', '<=414px') {
                 position: absolute;
@@ -262,6 +263,7 @@ nav {
 
     h1 {
         color: $mainText;
+
 
         @include media('>300px', '<=414px') {
             font-size: 20px;
@@ -415,6 +417,11 @@ section {
     .title {
         padding-top: 2rem;
         padding-bottom: 2rem;
+
+        @include media('>1920px', '<=2560px') {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+        }
     }
 
     .card {
@@ -551,6 +558,10 @@ section {
         background-color: $cardBg;
         color: $darkBlueText;
         @include transition();
+
+        @include media('>1920px', '<=2560px') {
+            padding-top: 4rem;
+        }
 
         @include media('>768px', '<=1140px') {
             width: 48.7%;
