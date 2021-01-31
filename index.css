@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -113,15 +114,15 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 75%;
   margin: auto;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   z-index: -1;
 }
 
@@ -184,11 +185,11 @@ nav {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transition-property: background-color, color;
@@ -240,14 +241,14 @@ nav {
   opacity: 0;
 }
 
-.wrapper input[type="checkbox"]:checked + .slider:before {
+.wrapper input[type="checkbox"]:checked+.slider:before {
   -webkit-transform: translateX(-26px);
-          transform: translateX(-26px);
+  transform: translateX(-26px);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
 }
 
-.wrapper input[type="checkbox"]:checked + .slider {
+.wrapper input[type="checkbox"]:checked+.slider {
   background: -webkit-gradient(linear, left top, right top, color-stop(15%, #378fe6), to(#3eda82));
   background: linear-gradient(to right, #378fe6 15%, #3eda82 100%);
 }
@@ -302,15 +303,15 @@ section .container {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 75%;
   margin: auto;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   -webkit-transition-property: background-color, color;
@@ -326,6 +327,13 @@ section .container h2 {
 section .title {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  section .title {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+  }
 }
 
 section .card {
@@ -373,11 +381,11 @@ section .card-title {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 11px;
   font-weight: 500;
   color: #63687e;
@@ -394,11 +402,11 @@ section .card-footer .footer-wrapper {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 section .card-footer .icon-up {
@@ -407,7 +415,7 @@ section .card-footer .icon-up {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
   width: 15px;
   height: 5px;
 }
@@ -418,7 +426,7 @@ section .card-footer .icon-down {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
   width: 15px;
   height: 5px;
 }
@@ -455,7 +463,7 @@ section .facebook-card .icon {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .twitter-card {
@@ -468,7 +476,7 @@ section .twitter-card .icon {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .instagram-card {
@@ -482,7 +490,7 @@ section .instagram-card .icon {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .instagram-card:before {
@@ -517,7 +525,7 @@ section .yt-card .icon {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .card-two {
@@ -531,6 +539,12 @@ section .card-two {
   transition: all 0.5s ease-in-out;
   -webkit-transition-property: background-color, color;
   transition-property: background-color, color;
+}
+
+@media (min-width: 1920px) and (max-width: 2560px) {
+  section .card-two {
+    padding-top: 4rem;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1140px) {
@@ -562,11 +576,11 @@ section .card-two .card-two-title {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-left: 2rem;
   margin-right: 2rem;
   padding-bottom: 1.5rem;
@@ -579,7 +593,7 @@ section .card-two .card-two-title .icon-face {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .card-two .card-two-title .icon-face {
@@ -588,7 +602,7 @@ section .card-two .card-two-title .icon-face {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .card-two .card-two-title .icon-insta {
@@ -597,7 +611,7 @@ section .card-two .card-two-title .icon-insta {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .card-two .card-two-title .icon-insta {
@@ -606,7 +620,7 @@ section .card-two .card-two-title .icon-insta {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .card-two .card-two-title .icon-twitter {
@@ -615,7 +629,7 @@ section .card-two .card-two-title .icon-twitter {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .card-two .card-two-title .icon-twitter {
@@ -624,7 +638,7 @@ section .card-two .card-two-title .icon-twitter {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .card-two .card-two-title .icon-yt {
@@ -633,7 +647,7 @@ section .card-two .card-two-title .icon-yt {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .card-two .card-two-title .icon-yt {
@@ -642,7 +656,7 @@ section .card-two .card-two-title .icon-yt {
   width: 25px;
   height: 20px;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 section .card-two .card-two-content {
@@ -650,11 +664,11 @@ section .card-two .card-two-content {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   margin-left: 2rem;
   margin-right: 2rem;
   padding-bottom: 1.5rem;
@@ -706,11 +720,11 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   font-size: 14px;
   font-weight: 300;
   margin-bottom: 3rem;
@@ -738,4 +752,5 @@ footer a {
 .marg {
   margin-bottom: 2rem !important;
 }
+
 /*# sourceMappingURL=index.css.map */

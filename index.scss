@@ -559,9 +559,6 @@ section {
         color: $darkBlueText;
         @include transition();
 
-        @include media('>1920px', '<=2560px') {
-            padding-top: 4rem;
-        }
 
         @include media('>768px', '<=1140px') {
             width: 48.7%;
@@ -581,6 +578,10 @@ section {
 
         @include media('<=280px') {
             width: 100%;
+        }
+
+        @include media('>1920px', '<=2560px') {
+            padding-top: 4rem;
         }
 
         .card-two-title {
